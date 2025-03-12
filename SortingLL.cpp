@@ -16,7 +16,7 @@ public:
 // Create a new linked list by taking user input
 Node* createLL() {
     int sizeLL;
-    cout << "ENTER SIZE:\n";
+    cout << "ENTER SIZE: ";
     cin >> sizeLL;
 
     if (sizeLL <= 0) {
@@ -25,14 +25,14 @@ Node* createLL() {
     }
 
     int tempValue;
-    cout << "ENTER VALUE:\n";
+    cout << "ENTER VALUE: ";
     cin >> tempValue;
     
     Node* head = new Node(tempValue);
     Node* tail = head;
     
     for (int i = 1; i < sizeLL; i++) {
-        cout << "ENTER VALUE:\n";
+        cout << "ENTER VALUE: ";
         cin >> tempValue;
         tail->next = new Node(tempValue); 
         tail = tail->next;
